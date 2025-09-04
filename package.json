@@ -2,6 +2,7 @@
   "name": "playwright-project",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "devDependencies": {
     "@playwright/test": "^1.55.0",
     "@types/node": "^24.3.0"
+  },
+  "dependencies": {
+    "chalk": "^5.6.0",
+    "math": "^0.0.3"
   }
 }
