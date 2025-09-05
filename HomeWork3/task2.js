@@ -1,12 +1,12 @@
-let age = 5
-console.log(age)
+let age = 5;
+console.log(age);
 
 function getRandom(min, max) {
     return Math.floor(Math.random()*(max-min+1))+min;
 }
 
 
-age = getRandom(10, 30)
+age = getRandom(10, 30);
 console.log("Age:", age);
 
 let isAdult;
