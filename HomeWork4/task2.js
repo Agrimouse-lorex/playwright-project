@@ -1,6 +1,6 @@
 import getRandom from '../HomeWork3/random.js';
 
-let hour = getRandom(0,23)
+let hour = getRandom(0,23);
 console.log("Hour:", hour);
 
 if(hour >= 0 && hour <= 5) {console.log("Good night!")}

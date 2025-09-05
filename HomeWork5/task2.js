@@ -20,6 +20,6 @@ function checkOrder(available,ordered) {
     }
 }
 
-console.log(checkOrder(2,0))
-console.log(checkOrder(2,1))
+console.log(checkOrder(2,0));
+console.log(checkOrder(2,1));
 console.log(checkOrder(2,3), `Для значення ${checkOrder[0,1]} `)
