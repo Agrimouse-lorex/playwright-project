@@ -14,9 +14,11 @@ import getRandom from '../HomeWork3/random.js';
 import promptSync from 'prompt-sync';
 
 const prompt = promptSync({sigint:true});
-
 const number = []
-
+// -------------------------------------------------
+// Я вирішив зробити функцію з колбеком, яка дозволятиме нам обирати довжину масиву,
+// а також імпортував свій модуль getRandom, щоб обирати рандомне число, яке запишеться в масив
+// так програмка виглядає цікавіше
 function numberFill(length,callback){
     while (number.length < length) {
         callback()
@@ -24,14 +26,15 @@ function numberFill(length,callback){
 
     return number//.join(", ")
 }
-
 function callback(){
-    let n = getRandom(-100, 100)
-    number.push(n)
+    let n = getRandom(-10, 10);
+    number.push(n);
 }
 
 let length = parseInt(prompt("Enter a length for array: "), 10);
 console.log(numberFill(length,callback))
+
+// -------------------------------------------------
 
 let positives = 0;
 let negatives = 0;
