@@ -50,7 +50,7 @@ const calculator = {
         this.operationsCount = 0;
     }
 }
-
+// Далі я з допомогою чата гпт, але, розібравшись в коді, вирішив додати більше автоматизації до цієї програми, оскільки не фанат хардкоду з консоль логом
 function askNumber(msg) {
   while (true) {
     const v = parseInt(prompt(msg));

@@ -17,12 +17,12 @@ function numberFill(length,callback){
     return arr//.join(", ")
 }
 function callback(){
-    let n = getRandom(-10, 10)
-    arr.push(n)
+    let n = getRandom(-10, 10);
+    arr.push(n);
 }
 
 let length = parseInt(prompt("Enter a length for array: "), 10);
-console.log(numberFill(length,callback))
+console.log(numberFill(length,callback));
 
 const sum = arr.reduce((acc, num) => acc + num, 0);
 console.log(sum)

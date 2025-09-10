@@ -12,19 +12,19 @@ const arr = [];
 
 function numberFill(length,callback){
     while (arr.length < length) {
-        callback()
+        callback();
     }
 
     return arr//.join(", ")
 }
 function callback(){
-    let n = getRandom(-10, 10)
+    let n = getRandom(-10, 10);
     // n % 2 === 0 ? arr.push(n) : null; - можна було б записати так щоб масив приймав лише парні значення
     arr.push(n);
 }
 
 let length = parseInt(prompt("Enter a length for array: "), 10);
-console.log(numberFill(length,callback))
+console.log(numberFill(length,callback));
 const evenNumber = arr.filter((num) => num % 2 === 0);
 console.log(evenNumber)
 
