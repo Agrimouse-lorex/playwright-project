@@ -20,19 +20,19 @@ function fetchPost() {
         .then((post) => post);
 }
 
-// function fetchComments() {
-//     return fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
-//         .then((response) => {
-//             if(!response.ok) throw new Error(`HTTP ${response.status}`);
-//             return response.json();
-//         })
-//         .then((comments) => comments);
-// }
+function fetchComments() {
+    return fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
+        .then((response) => {
+            if(!response.ok) throw new Error(`HTTP ${response.status}`);
+            return response.json();
+        })
+        .then((comments) => comments);
+}
 
 fetchPost()
     .then((post) => console.log('Post:', post))
     .catch((err) => console.error('Error fetchPost:', err));
 
-// fetchComments()
-//     .then((comments) => console.log('Comments:', comments))
-//     .catch((err) => console.error('Error fetchComments', err));
+fetchComments()
+    .then((comments) => console.log('Comments:', comments))
+    .catch((err) => console.error('Error fetchComments', err));
